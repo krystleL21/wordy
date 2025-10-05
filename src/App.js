@@ -12,9 +12,12 @@ function App() {
         <img src={kluxlogo} className="App-logo img-fluid" alt="logo" />
       </header>
       <main>
-        <Dictionary />
+        <h1>Dictionary</h1>
+        <Dictionary defaultKeyword="sunrise"/>
       </main>
-      <footer className="App-footer text-center"><small>Coded by Klux</small></footer>
+      <footer className="App-footer text-center">
+        <small>Coded by Klux</small>
+      </footer>
       </div>
     </div>
   );
