@@ -23,7 +23,7 @@ function search(){
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleDictionResponse);
 
-const pexelsapiUrl = `/.netlify/functions/getPhotos?keyword=${keyword}`;
+const pexelsapiUrl = `/netlify/functions/getPhotos?keyword=${keyword}`;
 axios.get(pexelsapiUrl).then(handlePexelsResponse);
 }
 
