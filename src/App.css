@@ -1,5 +1,5 @@
 body{
-  background: powderblue;
+  background: whitesmoke;
 }
   a{
     color: darkcyan;
@@ -8,8 +8,13 @@ body{
   margin: 30px 0;
 }
 .App-logo {
+  width: 100%;
   max-width: 100px;
   display: block;
+  margin: 0 auto;
+}
+.App {
+  max-width: 900px;
   margin: 0 auto;
 }
 .App-footer {
@@ -19,6 +24,6 @@ body{
 
 .App h1 {
   text-align: center;
-  color: goldenrod; 
+  color:black; 
 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }

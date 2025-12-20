@@ -2,7 +2,7 @@ import axios from "axios";
 
 export async function handler(event, context) {
   const keyword = event.queryStringParameters.keyword || "nature";
-  const pexelsApiKey = process.env.PEXELS_API_KEY; // ✅ pulled securely from environment variable
+  const pexelsApiKey = process.env.PDA1yJpUJwQaRYqSvJwxKPouhlvv2DCGmspP5dTbRDFesttUdmikfjteJ; // ✅ pulled securely from environment variable
   const pexelsurl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=4`;
 
   try {
@@ -28,7 +28,7 @@ export async function handler(event, context) {
 
 export async function handler(event, context) {
   const keyword = event.queryStringParameters.keyword || "nature";
-  const pexelsApiKey = process.env.PEXELS_API_KEY; // ✅ pulled securely from environment variable
+  const pexelsApiKey = process.env.DA1yJpUJwQaRYqSvJwxKPouhlvv2DCGmspP5dTbRDFesttUdmikfjteJ // ✅ pulled securely from environment variable
   const pexelsurl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=4`;
 
   try {

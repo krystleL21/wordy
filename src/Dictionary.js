@@ -23,11 +23,12 @@ function search(){
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleDictionResponse);
 
-const pexelsapiUrl = `/netlify/functions/getPhotos?keyword=${keyword}`;
-axios.get(pexelsapiUrl).then(handlePexelsResponse);
+const pexelApiKey = "DA1yJpUJwQaRYqSvJwxKPouhlvv2DCGmspP5dTbRDFesttUdmikfjteJ";
+const pexelsapiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=4`;
+
+const headers = {Authorization : pexelApiKey};
+axios.get(pexelsapiUrl, { headers: headers}).then(handlePexelsResponse);
 }
-
-
 
 function handlesubmit(event){
 event.preventDefault();
